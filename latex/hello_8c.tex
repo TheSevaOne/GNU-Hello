@@ -1,0 +1,196 @@
+\hypertarget{hello_8c}{}\section{src/hello.c File Reference}
+\label{hello_8c}\index{src/hello.\+c@{src/hello.\+c}}
+{\ttfamily \#include $<$config.\+h$>$}\\*
+{\ttfamily \#include $<$getopt.\+h$>$}\\*
+{\ttfamily \#include $<$stdnoreturn.\+h$>$}\\*
+{\ttfamily \#include $<$wchar.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}closeout.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}configmake.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}dirname.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}errno.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}gettext.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}progname.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xalloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ctype.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$gtk/gtk.\+h$>$}\\*
+{\ttfamily \#include $<$gdk/gdk.\+h$>$}\\*
+Include dependency graph for hello.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hello_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \+\_\+\+Noreturn void \hyperlink{hello_8c_a6fc4beeab8ac72edc27edc24cf7ef525}{print\+\_\+help} (F\+I\+LE $\ast$restrict out)
+\item 
+static void \hyperlink{hello_8c_a2e0d36c06cdd7fbacb264c67367d3b01}{print\+\_\+version} (void)
+\item 
+static void \hyperlink{hello_8c_a9327e4e5f8a3d809ecf0e564973b091b}{print\+\_\+simbols} (const char $\ast$)
+\item 
+static void \hyperlink{hello_8c_a16ede0b83ba9386247c53f9ef3650321}{gtk\+\_\+greeting} (const char $\ast$greeting\+\_\+msg)
+\item 
+int \hyperlink{hello_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const struct option \hyperlink{hello_8c_a7f2c8becae59a68faf6fc1540e88ab11}{longopts} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{hello.\+c@{hello.\+c}!gtk\+\_\+greeting@{gtk\+\_\+greeting}}
+\index{gtk\+\_\+greeting@{gtk\+\_\+greeting}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{gtk\+\_\+greeting(const char $\ast$greeting\+\_\+msg)}{gtk_greeting(const char *greeting_msg)}}]{\setlength{\rightskip}{0pt plus 5cm}static void gtk\+\_\+greeting (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{greeting\+\_\+msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{hello_8c_a16ede0b83ba9386247c53f9ef3650321}{}\label{hello_8c_a16ede0b83ba9386247c53f9ef3650321}
+Используя G\+TK выводит сообение в отдельном окне Здесь предполагается, что gtk\+\_\+parse\+\_\+args уже была вызвана ранее.
+
+T\+O\+DO\+: проверить, удалось ли открыть дисплей.
+
+G\+T\+K+ использует U\+T\+F-\/8, а строка greeting\+\_\+msg в системной кодировке, которая может отличаться.
+
+T\+O\+DO\+: проверить, удалось ли преобразовать строку. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{hello_8c_a16ede0b83ba9386247c53f9ef3650321_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{hello.\+c@{hello.\+c}!main@{main}}
+\index{main@{main}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{hello_8c_a0ddf1224851353fc92bfbff6f499fa97}{}\label{hello_8c_a0ddf1224851353fc92bfbff6f499fa97}
+Set the text message domain.
+
+Having initialized gettext, get the default message.
+
+Even exiting has subtleties. On exit, if any writes failed, change the exit status. The /dev/full device on G\+N\+U/\+Linux can be used for testing; for instance, hello $>$/dev/full should exit unsuccessfully. This is implemented in the Gnulib module \char`\"{}closeout\char`\"{}.
+
+--help and --version exit immediately, per G\+NU coding standards.
+
+Print error message and exit. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{hello_8c_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{hello.\+c@{hello.\+c}!print\+\_\+help@{print\+\_\+help}}
+\index{print\+\_\+help@{print\+\_\+help}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{print\+\_\+help(\+F\+I\+L\+E $\ast$restrict out)}{print_help(FILE *restrict out)}}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+\+Noreturn void print\+\_\+help (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$restrict}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{hello_8c_a6fc4beeab8ac72edc27edc24cf7ef525}{}\label{hello_8c_a6fc4beeab8ac72edc27edc24cf7ef525}
+Справка по ключам
+
+Print help info. This long message is split into several pieces to help translators be able to align different blocks and identify the various pieces. T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: --help output 1 (synopsis) no-\/wrap
+
+T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: --help output 2 (brief description) no-\/wrap
+
+T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: --help output 3\+: options no-\/wrap
+
+T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: --help output 4+ (reports) T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: the placeholder indicates the bug-\/reporting address for this application. no-\/wrap
+
+Don\textquotesingle{}t output this redundant message for English locales. Note we still output for \textquotesingle{}C\textquotesingle{} so that it gets included in the man page.
+
+T\+R\+A\+N\+S\+L\+A\+T\+O\+RS\+: Replace L\+A\+N\+G\+\_\+\+C\+O\+DE in this U\+RL with your language code \href{https://translationproject.org/team/LANG_CODE.html}{\tt https\+://translationproject.\+org/team/\+L\+A\+N\+G\+\_\+\+C\+O\+D\+E.\+html} to form one of the U\+R\+Ls at \href{https://translationproject.org/team/}{\tt https\+://translationproject.\+org/team/}. Otherwise, replace the entire U\+RL with your translation team\textquotesingle{}s email address. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{hello_8c_a6fc4beeab8ac72edc27edc24cf7ef525_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{hello.\+c@{hello.\+c}!print\+\_\+simbols@{print\+\_\+simbols}}
+\index{print\+\_\+simbols@{print\+\_\+simbols}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{print\+\_\+simbols(const char $\ast$)}{print_simbols(const char *)}}]{\setlength{\rightskip}{0pt plus 5cm}static void print\+\_\+simbols (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{greeting\+\_\+msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{hello_8c_a9327e4e5f8a3d809ecf0e564973b091b}{}\label{hello_8c_a9327e4e5f8a3d809ecf0e564973b091b}
+Вывод строки в верхнем регистре Print greeting message and exit. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{hello_8c_a9327e4e5f8a3d809ecf0e564973b091b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{hello.\+c@{hello.\+c}!print\+\_\+version@{print\+\_\+version}}
+\index{print\+\_\+version@{print\+\_\+version}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{print\+\_\+version(void)}{print_version(void)}}]{\setlength{\rightskip}{0pt plus 5cm}static void print\+\_\+version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{hello_8c_a2e0d36c06cdd7fbacb264c67367d3b01}{}\label{hello_8c_a2e0d36c06cdd7fbacb264c67367d3b01}
+Выводит информацию о справке
+
+Print version and copyright information. xgettext\+: no-\/wrap
+
+It is important to separate the year from the rest of the message, as done here, to avoid having to retranslate the message when a new year comes around. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{hello_8c_a2e0d36c06cdd7fbacb264c67367d3b01_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{hello.\+c@{hello.\+c}!longopts@{longopts}}
+\index{longopts@{longopts}!hello.\+c@{hello.\+c}}
+\subsubsection[{\texorpdfstring{longopts}{longopts}}]{\setlength{\rightskip}{0pt plus 5cm}const struct option longopts\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{hello_8c_a7f2c8becae59a68faf6fc1540e88ab11}{}\label{hello_8c_a7f2c8becae59a68faf6fc1540e88ab11}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+  \{\textcolor{stringliteral}{"greeting"}, required\_argument, NULL, \textcolor{charliteral}{'g'}\},
+  \{\textcolor{stringliteral}{"help"}, no\_argument, NULL, \textcolor{charliteral}{'h'}\},
+  \{\textcolor{stringliteral}{"traditional"}, no\_argument, NULL, \textcolor{charliteral}{'t'}\},
+  \{\textcolor{stringliteral}{"version"}, no\_argument, NULL, \textcolor{charliteral}{'v'}\},
+  \{\textcolor{stringliteral}{"gtk"}, no\_argument, NULL, \textcolor{charliteral}{'w'}\},
+  \{NULL, 0, NULL, 0\}
+\}
+\end{DoxyCode}
+\hyperlink{hello_8c}{hello.\+c} -- print a greeting message and exit.
+
+Copyright 1992-\/2017 Free Software Foundation, Inc.
+
+This program is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program. If not, see \href{https://www.gnu.org/licenses/}{\tt https\+://www.\+gnu.\+org/licenses/}.
+
+Структура ключей и их символьных значений 

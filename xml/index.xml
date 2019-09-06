@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="hello_8c" kind="file"><name>hello.c</name>
+    <member refid="hello_8c_1a7f2c8becae59a68faf6fc1540e88ab11" kind="variable"><name>longopts</name></member>
+    <member refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" kind="function"><name>print_help</name></member>
+    <member refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" kind="function"><name>print_version</name></member>
+    <member refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" kind="function"><name>print_simbols</name></member>
+    <member refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" kind="function"><name>gtk_greeting</name></member>
+    <member refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="hello_8c" kind="file" language="C++">
+    <compoundname>hello.c</compoundname>
+    <includes local="no">config.h</includes>
+    <includes local="no">getopt.h</includes>
+    <includes local="no">stdnoreturn.h</includes>
+    <includes local="no">wchar.h</includes>
+    <includes local="yes">system.h</includes>
+    <includes local="no">limits.h</includes>
+    <includes local="no">locale.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">wctype.h</includes>
+    <includes local="yes">gettext.h</includes>
+    <includes local="yes">closeout.h</includes>
+    <includes local="yes">configmake.h</includes>
+    <includes local="yes">dirname.h</includes>
+    <includes local="yes">errno.h</includes>
+    <includes local="yes">error.h</includes>
+    <includes local="yes">progname.h</includes>
+    <includes local="yes">xalloc.h</includes>
+    <includes local="yes">ctype.h</includes>
+    <includes local="no">gtk/gtk.h</includes>
+    <includes local="no">gdk/gdk.h</includes>
+    <incdepgraph>
+      <node id="43">
+        <label>error.h</label>
+      </node>
+      <node id="28">
+        <label>stdnoreturn.h</label>
+      </node>
+      <node id="37">
+        <label>wctype.h</label>
+      </node>
+      <node id="34">
+        <label>stdlib.h</label>
+      </node>
+      <node id="42">
+        <label>errno.h</label>
+      </node>
+      <node id="40">
+        <label>configmake.h</label>
+      </node>
+      <node id="41">
+        <label>dirname.h</label>
+      </node>
+      <node id="45">
+        <label>xalloc.h</label>
+      </node>
+      <node id="47">
+        <label>gtk/gtk.h</label>
+      </node>
+      <node id="31">
+        <label>limits.h</label>
+      </node>
+      <node id="29">
+        <label>wchar.h</label>
+      </node>
+      <node id="35">
+        <label>string.h</label>
+      </node>
+      <node id="36">
+        <label>unistd.h</label>
+      </node>
+      <node id="38">
+        <label>gettext.h</label>
+      </node>
+      <node id="48">
+        <label>gdk/gdk.h</label>
+      </node>
+      <node id="39">
+        <label>closeout.h</label>
+      </node>
+      <node id="46">
+        <label>ctype.h</label>
+      </node>
+      <node id="27">
+        <label>getopt.h</label>
+      </node>
+      <node id="25">
+        <label>src/hello.c</label>
+        <link refid="hello.c"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>progname.h</label>
+      </node>
+      <node id="26">
+        <label>config.h</label>
+      </node>
+      <node id="30">
+        <label>system.h</label>
+      </node>
+      <node id="33">
+        <label>stdio.h</label>
+      </node>
+      <node id="32">
+        <label>locale.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="hello_8c_1a7f2c8becae59a68faf6fc1540e88ab11" prot="public" static="yes" mutable="no">
+        <type>const struct option</type>
+        <definition>const struct option longopts[]</definition>
+        <argsstring>[]</argsstring>
+        <name>longopts</name>
+        <initializer>= {
+  {&quot;greeting&quot;, required_argument, NULL, &apos;g&apos;},
+  {&quot;help&quot;, no_argument, NULL, &apos;h&apos;},
+  {&quot;traditional&quot;, no_argument, NULL, &apos;t&apos;},
+  {&quot;version&quot;, no_argument, NULL, &apos;v&apos;},
+  {&quot;gtk&quot;, no_argument, NULL, &apos;w&apos;},
+  {NULL, 0, NULL, 0}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="hello_8c" kindref="compound">hello.c</ref> <ndash/> print a greeting message and exit.</para><para>Copyright 1992-2017 Free Software Foundation, Inc.</para><para>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU General Public License along with this program. If not, see <ulink url="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</ulink>.</para><para>Структура ключей и их символьных значений </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/hello.c" line="1" column="1" bodyfile="src/hello.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_Noreturn void</type>
+        <definition>static _Noreturn void print_help</definition>
+        <argsstring>(FILE *restrict out)</argsstring>
+        <name>print_help</name>
+        <param>
+          <type>FILE *restrict</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Справка по ключам</para><para>Print help info. This long message is split into several pieces to help translators be able to align different blocks and identify the various pieces. </para>        </detaileddescription>
+        <inbodydescription>
+<para>TRANSLATORS: <ndash/>help output 1 (synopsis) no-wrap</para><para>TRANSLATORS: <ndash/>help output 2 (brief description) no-wrap</para><para>TRANSLATORS: <ndash/>help output 3: options no-wrap</para><para>TRANSLATORS: <ndash/>help output 4+ (reports) TRANSLATORS: the placeholder indicates the bug-reporting address for this application. no-wrap</para><para>Don&apos;t output this redundant message for English locales. Note we still output for &apos;C&apos; so that it gets included in the man page.</para><para>TRANSLATORS: Replace LANG_CODE in this URL with your language code <ulink url="https://translationproject.org/team/LANG_CODE.html">https://translationproject.org/team/LANG_CODE.html</ulink> to form one of the URLs at <ulink url="https://translationproject.org/team/">https://translationproject.org/team/</ulink>. Otherwise, replace the entire URL with your translation team&apos;s email address. </para>        </inbodydescription>
+        <location file="src/hello.c" line="51" column="1" bodyfile="src/hello.c" bodystart="155" bodyend="208"/>
+        <referencedby refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="hello_8c" startline="63" endline="147">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_version</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_version</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Выводит информацию о справке</para><para>Print version and copyright information. </para>        </detaileddescription>
+        <inbodydescription>
+<para>xgettext: no-wrap</para><para>It is important to separate the year from the rest of the message, as done here, to avoid having to retranslate the message when a new year comes around. </para>        </inbodydescription>
+        <location file="src/hello.c" line="55" column="1" bodyfile="src/hello.c" bodystart="215" bodyend="229"/>
+        <referencedby refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="hello_8c" startline="63" endline="147">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_simbols</definition>
+        <argsstring>(const char *)</argsstring>
+        <name>print_simbols</name>
+        <param>
+          <type>const char *</type>
+          <defname>greeting_msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вывод строки в верхнем регистре </para>        </detaileddescription>
+        <inbodydescription>
+<para>Print greeting message and exit. </para>        </inbodydescription>
+        <location file="src/hello.c" line="57" column="1" bodyfile="src/hello.c" bodystart="232" bodyend="254"/>
+        <referencedby refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="hello_8c" startline="63" endline="147">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void gtk_greeting</definition>
+        <argsstring>(const char *greeting_msg)</argsstring>
+        <name>gtk_greeting</name>
+        <param>
+          <type>const char *</type>
+          <declname>greeting_msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Используя GTK выводит сообение в отдельном окне </para>        </detaileddescription>
+        <inbodydescription>
+<para>Здесь предполагается, что gtk_parse_args уже была вызвана ранее.</para><para>TODO: проверить, удалось ли открыть дисплей.</para><para>GTK+ использует UTF-8, а строка greeting_msg в системной кодировке, которая может отличаться.</para><para>TODO: проверить, удалось ли преобразовать строку. </para>        </inbodydescription>
+        <location file="src/hello.c" line="60" column="1" bodyfile="src/hello.c" bodystart="258" bodyend="294"/>
+        <referencedby refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="hello_8c" startline="63" endline="147">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Set the text message domain.</para><para>Having initialized gettext, get the default message.</para><para>Even exiting has subtleties. On exit, if any writes failed, change the exit status. The /dev/full device on GNU/Linux can be used for testing; for instance, hello &gt;/dev/full should exit unsuccessfully. This is implemented in the Gnulib module &quot;closeout&quot;.</para><para><ndash/>help and <ndash/>version exit immediately, per GNU coding standards.</para><para>Print error message and exit. </para>        </inbodydescription>
+        <location file="src/hello.c" line="63" column="1" bodyfile="src/hello.c" bodystart="63" bodyend="147"/>
+        <references refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" compoundref="hello_8c" startline="215" endline="229">print_version</references>
+        <references refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" compoundref="hello_8c" startline="155" endline="208">print_help</references>
+        <references refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" compoundref="hello_8c" startline="258" endline="294">gtk_greeting</references>
+        <references refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" compoundref="hello_8c" startline="232" endline="254">print_simbols</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#include<sp/>&lt;config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;getopt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdnoreturn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wchar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;system.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;closeout.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;configmake.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dirname.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;errno.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gettext.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;progname.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;xalloc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ctype.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gtk/gtk.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gdk/gdk.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="hello_8c_1a7f2c8becae59a68faf6fc1540e88ab11" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">option<sp/><ref refid="hello_8c_1a7f2c8becae59a68faf6fc1540e88ab11" kindref="member">longopts</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;greeting&quot;</highlight><highlight class="normal">,<sp/>required_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;g&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;h&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;traditional&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;v&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;gtk&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>{NULL,<sp/>0,<sp/>NULL,<sp/>0}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declarations.<sp/><sp/>*/</highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>_Noreturn<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" kindref="member">print_help</ref><sp/>(FILE<sp/>*<sp/>restrict<sp/>out);</highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" kindref="member">print_version</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" kindref="member">print_simbols</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" kindref="member">gtk_greeting</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*greeting_msg);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"><ref refid="hello_8c_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>gtk_parse_args<sp/>(&amp;argc,<sp/>&amp;argv);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>optc;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lose<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*greeting_msg;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/>*mb_greeting;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>OPT_HELP<sp/>=<sp/>CHAR_MAX<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>OPT_VERSION</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">option<sp/>longopts[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;greeting&quot;</highlight><highlight class="normal">,<sp/>required_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;g&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;traditional&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/></highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/>OPT_HELP},</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">,<sp/>no_argument,<sp/>NULL,<sp/>OPT_VERSION},</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{NULL,<sp/>0,<sp/>NULL,<sp/>0}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>set_program_name<sp/>(argv[0]);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>locale<sp/>via<sp/>LC_ALL.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>setlocale<sp/>(LC_ALL,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ENABLE_NLS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>bindtextdomain<sp/>(PACKAGE,<sp/>LOCALEDIR);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>textdomain<sp/>(PACKAGE);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>greeting_msg<sp/>=<sp/>_(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>world!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>atexit<sp/>(close_stdout);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((optc<sp/>=<sp/>getopt_long<sp/>(argc,<sp/>argv,<sp/></highlight><highlight class="stringliteral">&quot;wg:t&quot;</highlight><highlight class="normal">,<sp/>longopts,<sp/>NULL))<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((optc<sp/>=<sp/>getopt_long<sp/>(argc,<sp/>argv,<sp/></highlight><highlight class="stringliteral">&quot;g:t&quot;</highlight><highlight class="normal">,<sp/>longopts,<sp/>NULL))<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(optc)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPT_VERSION:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" kindref="member">print_version</ref><sp/>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;g&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>greeting_msg<sp/>=<sp/>optarg;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>OPT_HELP:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" kindref="member">print_help</ref><sp/>(stdout);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;t&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>greeting_msg<sp/>=<sp/>_(</highlight><highlight class="stringliteral">&quot;hello,<sp/>world&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;w&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" kindref="member">gtk_greeting</ref><sp/>(greeting_msg);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>lose<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lose<sp/>||<sp/>optind<sp/>&lt;<sp/>argc)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>(0,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;%s:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>_(</highlight><highlight class="stringliteral">&quot;extra<sp/>operand&quot;</highlight><highlight class="normal">),<sp/>argv[optind]);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" kindref="member">print_help</ref><sp/>(stderr);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><ref refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" kindref="member">print_simbols</ref><sp/>(greeting_msg);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>exit<sp/>(EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>_Noreturn<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" refkind="member"><highlight class="normal"><ref refid="hello_8c_1a6fc4beeab8ac72edc27edc24cf7ef525" kindref="member">print_help</ref><sp/>(FILE<sp/>*<sp/>restrict<sp/>out)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lc_messages<sp/>=<sp/>setlocale<sp/>(LC_MESSAGES,<sp/>NULL);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>%s<sp/>[OPTION]...\n&quot;</highlight><highlight class="normal">),<sp/>program_name);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;Print<sp/>a<sp/>friendly,<sp/>customizable<sp/>greeting.\n&quot;</highlight><highlight class="normal">),<sp/>out);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>fputs<sp/>(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>out);</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>-w,<sp/>--gtk<sp/><sp/><sp/><sp/><sp/><sp/>use<sp/>GTK<sp/>greeting\n&quot;</highlight><highlight class="normal">),<sp/>out);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>-t,<sp/>--traditional<sp/><sp/><sp/><sp/><sp/><sp/><sp/>use<sp/>traditional<sp/>greeting\n&quot;</highlight><highlight class="normal">),<sp/>out);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>-g,<sp/>--greeting=TEXT<sp/><sp/><sp/><sp/><sp/>use<sp/>TEXT<sp/>as<sp/>the<sp/>greeting<sp/>message\n&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>out);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>fputs<sp/>(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>out);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>--help<sp/><sp/><sp/><sp/><sp/>display<sp/>this<sp/>help<sp/>and<sp/>exit\n&quot;</highlight><highlight class="normal">),<sp/>out);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>fputs<sp/>(_(</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>--version<sp/><sp/>output<sp/>version<sp/>information<sp/>and<sp/>exit\n&quot;</highlight><highlight class="normal">),<sp/>out);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>fputs<sp/>(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">,<sp/>out);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;Report<sp/>bugs<sp/>to:<sp/>%s\n&quot;</highlight><highlight class="normal">),<sp/>PACKAGE_BUGREPORT);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lc_messages<sp/>&amp;&amp;<sp/>STRNCMP_LIT<sp/>(lc_messages,<sp/></highlight><highlight class="stringliteral">&quot;en_&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;Report<sp/>%s<sp/>translation<sp/>bugs<sp/>to<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;https://translationproject.org/team/&gt;\n&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PACKAGE_NAME);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PACKAGE_PACKAGER_BUG_REPORTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;Report<sp/>%s<sp/>bugs<sp/>to:<sp/>%s\n&quot;</highlight><highlight class="normal">),<sp/>PACKAGE_PACKAGER,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PACKAGE_PACKAGER_BUG_REPORTS);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PACKAGE_URL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;%s<sp/>home<sp/>page:<sp/>&lt;%s&gt;\n&quot;</highlight><highlight class="normal">),<sp/>PACKAGE_NAME,<sp/>PACKAGE_URL);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>fprintf<sp/>(out,<sp/>_(</highlight><highlight class="stringliteral">&quot;%s<sp/>home<sp/>page:<sp/>&lt;https://www.gnu.org/software/%s/&gt;\n&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PACKAGE_NAME,<sp/>PACKAGE);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>fputs<sp/>(_</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="stringliteral">&quot;General<sp/>help<sp/>using<sp/>GNU<sp/>software:<sp/>&lt;https://www.gnu.org/gethelp/&gt;\n&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>out);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>exit<sp/>(out<sp/>==<sp/>stderr<sp/>?<sp/>EXIT_FAILURE<sp/>:<sp/>EXIT_SUCCESS);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" refkind="member"><highlight class="normal"><ref refid="hello_8c_1a2e0d36c06cdd7fbacb264c67367d3b01" kindref="member">print_version</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;%s<sp/>(%s)<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>PACKAGE,<sp/>PACKAGE_NAME,<sp/>VERSION);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>puts<sp/>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>printf<sp/>(_(</highlight><highlight class="stringliteral">&quot;\</highlight></codeline>
+<codeline lineno="225"><highlight class="stringliteral">Copyright<sp/>(C)<sp/>%d<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.\n\</highlight></codeline>
+<codeline lineno="226"><highlight class="stringliteral">License<sp/>GPLv3+:<sp/>GNU<sp/>GPL<sp/>version<sp/>3<sp/>or<sp/>later<sp/>&lt;https://gnu.org/licenses/gpl.html&gt;\n\</highlight></codeline>
+<codeline lineno="227"><highlight class="stringliteral">This<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>are<sp/>free<sp/>to<sp/>change<sp/>and<sp/>redistribute<sp/>it.\n\</highlight></codeline>
+<codeline lineno="228"><highlight class="stringliteral">There<sp/>is<sp/>NO<sp/>WARRANTY,<sp/>to<sp/>the<sp/>extent<sp/>permitted<sp/>by<sp/>law.\n&quot;</highlight><highlight class="normal">),<sp/>COPYRIGHT_YEAR);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" refkind="member"><highlight class="normal"><ref refid="hello_8c_1a9327e4e5f8a3d809ecf0e564973b091b" kindref="member">print_simbols</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*greeting_msg)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/>*mb_greeting;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>len<sp/>=<sp/>mbsrtowcs<sp/>(NULL,<sp/>&amp;greeting_msg,<sp/>0,<sp/>NULL);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>==<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>error<sp/>(EXIT_FAILURE,<sp/>errno,<sp/>_(</highlight><highlight class="stringliteral">&quot;conversion<sp/>to<sp/>a<sp/>multibyte<sp/>string<sp/>failed&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>mb_greeting<sp/>=<sp/>xmalloc<sp/>((len<sp/>+<sp/>1)<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>mbsrtowcs<sp/>(mb_greeting,<sp/>&amp;greeting_msg,<sp/>len<sp/>+<sp/>1,<sp/>NULL);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/>*c<sp/>=<sp/>mb_greeting;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*c)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*c<sp/>=<sp/>towupper<sp/>(*c);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c++;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>wprintf<sp/>(L</highlight><highlight class="stringliteral">&quot;%ls\n&quot;</highlight><highlight class="normal">,<sp/>mb_greeting);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>free<sp/>(mb_greeting);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USE_GTK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" refkind="member"><highlight class="normal"><ref refid="hello_8c_1a16ede0b83ba9386247c53f9ef3650321" kindref="member">gtk_greeting</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*greeting_msg)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>GtkWidget<sp/>*window;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>GtkWidget<sp/>*button;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>gchar<sp/>*greeting_utf8;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>gdk_display_open<sp/>(gdk_get_display_arg_name<sp/>());</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gdk_display_open<sp/>(gdk_get_display_arg_name<sp/>())<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>(EXIT_FAILURE,<sp/>errno,<sp/>_(</highlight><highlight class="stringliteral">&quot;fatal<sp/>errorNOTCOREDUMPED&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>window<sp/>=<sp/>gtk_window_new<sp/>(GTK_WINDOW_TOPLEVEL);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>gtk_window_set_title<sp/>(GTK_WINDOW<sp/>(window),<sp/></highlight><highlight class="stringliteral">&quot;Hello&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>greeting_utf8<sp/>=<sp/>g_locale_to_utf8<sp/>(greeting_msg,<sp/>-1,<sp/>NULL,<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(greeting_utf8<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>(EXIT_FAILURE,<sp/>errno,<sp/>_(</highlight><highlight class="stringliteral">&quot;fatal<sp/>error&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>button<sp/>=<sp/>gtk_button_new_with_label<sp/>(greeting_utf8);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>g_signal_connect<sp/>(window,<sp/></highlight><highlight class="stringliteral">&quot;destroy&quot;</highlight><highlight class="normal">,<sp/>G_CALLBACK<sp/>(gtk_main_quit),<sp/>NULL);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>g_signal_connect<sp/>(button,<sp/></highlight><highlight class="stringliteral">&quot;clicked&quot;</highlight><highlight class="normal">,<sp/>G_CALLBACK<sp/>(gtk_main_quit),<sp/>NULL);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>gtk_container_add<sp/>(GTK_CONTAINER<sp/>(window),<sp/>button);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>gtk_widget_show<sp/>(button);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>gtk_widget_show<sp/>(window);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>gtk_main<sp/>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/hello.c"/>
+  </compounddef>
+</doxygen>

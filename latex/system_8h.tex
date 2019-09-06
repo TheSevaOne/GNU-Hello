@@ -1,0 +1,61 @@
+\hypertarget{system_8h}{}\section{src/system.h File Reference}
+\label{system_8h}\index{src/system.\+h@{src/system.\+h}}
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+{\ttfamily \#include $<$locale.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$getopt.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$wchar.\+h$>$}\\*
+{\ttfamily \#include $<$wctype.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}gettext.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}closeout.\+h\char`\"{}}\\*
+Include dependency graph for system.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{system_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{system_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{system_8h_a6554a5ea005e85d0f84f2f34c11de938}{\+\_\+}(str)~gettext (str)
+\item 
+\#define \hyperlink{system_8h_a2091f4107eaba5336ec06bb5e38a5711}{N\+\_\+}(str)~gettext\+\_\+noop (str)
+\item 
+\#define \hyperlink{system_8h_a88833a66d58e497c92d702140ac2883c}{S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT}(s,  literal)~strncmp (s, \char`\"{}\char`\"{} literal \char`\"{}\char`\"{}, sizeof (literal) -\/ 1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{system.\+h@{system.\+h}!\+\_\+@{\+\_\+}}
+\index{\+\_\+@{\+\_\+}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{\+\_\+}{_}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~gettext (str)}\hypertarget{system_8h_a6554a5ea005e85d0f84f2f34c11de938}{}\label{system_8h_a6554a5ea005e85d0f84f2f34c11de938}
+\index{system.\+h@{system.\+h}!N\+\_\+@{N\+\_\+}}
+\index{N\+\_\+@{N\+\_\+}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{N\+\_\+}{N_}}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+\_\+(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~gettext\+\_\+noop (str)}\hypertarget{system_8h_a2091f4107eaba5336ec06bb5e38a5711}{}\label{system_8h_a2091f4107eaba5336ec06bb5e38a5711}
+\index{system.\+h@{system.\+h}!S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT@{S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT}}
+\index{S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT@{S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT}!system.\+h@{system.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT}{STRNCMP_LIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+R\+N\+C\+M\+P\+\_\+\+L\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{s, }
+\item[{}]{literal}
+\end{DoxyParamCaption}
+)~strncmp (s, \char`\"{}\char`\"{} literal \char`\"{}\char`\"{}, sizeof (literal) -\/ 1)}\hypertarget{system_8h_a88833a66d58e497c92d702140ac2883c}{}\label{system_8h_a88833a66d58e497c92d702140ac2883c}
